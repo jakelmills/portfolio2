@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header img {
+  height: 8em;
+}
+
+nav a {
+  font-size: 2em;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.innerWrapper {
+  width: 75%;
+  height: 80%;
+  margin: 200px auto;
+  text-align: center;
+}
+
+.innerWrapper a {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 4em;
+  transition: scale 0.5s ease;
+  color: black;
+  text-decoration: none;
+}
+
+.innerWrapper a:hover {
+  scale: 1.25;
+}
+
