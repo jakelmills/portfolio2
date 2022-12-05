@@ -1,21 +1,33 @@
+body {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 40px 0;
+  padding: 40px 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 500;
+  background-color: white;
 }
 
 header img {
   height: 8em;
+  margin-right: 80px;
+}
+
+header nav {
+  margin-left: 80px;
 }
 
 nav a {
   font-size: 2em;
   margin-left: 8px;
   text-decoration: none;
+  color: blue;
 }
 
 nav a.active {
@@ -23,9 +35,11 @@ nav a.active {
 }
 
 .innerWrapper {
-  width: 75%;
+  margin: 0 auto;
+  width: 80%;
   height: 80%;
-  margin: 200px auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
   text-align: center;
 }
 
@@ -42,3 +56,50 @@ nav a.active {
   scale: 1.25;
 }
 
+@media (min-height:801px ) {
+  header img {
+    height: 10em;
+  }
+
+  nav a {
+    font-size: 4em;
+    margin-left: 16px;
+  }
+
+  .innerWrapper {
+    margin-top: 280px;
+  }
+
+  .innerWrapper a {
+    margin-bottom: 24px;
+    font-size: 8em;
+  }
+}
+
+/* ----------------- PROJECT PAGE STYLING -----------------  */
+
+.contentWrapper {
+  display: flex;
+  overflow: scroll;
+}
+
+.contentWrapper .projectImages {
+  width: 50%;
+  height: 100%;
+}
+
+.contentWrapper .projectText {
+  width: 50%;
+  padding: 0 16px;
+}
+
+.projectText h2 {
+  font-size: 4em;
+  margin: 0 auto;
+}
+
+.projectText p {
+  margin-top: 16px;
+  font-size: 1.25em;
+  text-align: justify;
+}
